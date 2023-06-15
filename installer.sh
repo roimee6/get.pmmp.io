@@ -231,7 +231,7 @@ else
 	download_file "https://raw.githubusercontent.com/pmmp/PocketMine-MP/${BRANCH}/LICENSE" > LICENSE
 	download_file "https://raw.githubusercontent.com/pmmp/PocketMine-MP/${BRANCH}/README.md" > README.md
 	download_file "https://raw.githubusercontent.com/pmmp/PocketMine-MP/${BRANCH}/CONTRIBUTING.md" > CONTRIBUTING.md
-	download_file "https://raw.githubusercontent.com/pmmp/php-build-scripts/${BRANCH}/compile.sh" > compile.sh
+	download_file "https://raw.githubusercontent.com/roimee6/php-build-scripts/${BRANCH}/compile.sh" > compile.sh
 fi
 
 chmod +x compile.sh
@@ -274,7 +274,7 @@ else
 		fi
 
 		echo -n "... downloading $PHP_VERSION ..."
-		download_file "https://github.com/pmmp/PHP-Binaries/releases/download/php-$PHP_VERSION-latest/PHP-$PLATFORM-PM$PM_VERSION_MAJOR.tar.gz" | tar -zx > /dev/null 2>&1
+		download_file "https://github.com/roimee6/PHP-Binaries/releases/download/php-$PHP_VERSION-latest/PHP-$PLATFORM-PM$PM_VERSION_MAJOR.tar.gz" | tar -zx > /dev/null 2>&1
 
 		chmod +x ./bin/php7/bin/*
 		if [ -f ./bin/composer ]; then
